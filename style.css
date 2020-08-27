@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(226, 222, 222);
+}
+.top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+.screen{
+    height: 250px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5),
+                inset 0 15px 30px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#samples{
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    overflow: auto;
+    background-color: #fff;
+    /* border-radius: 25px; */
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5),
+                inset 0 15px 30px 0 rgba(0, 0, 0, 0.5);
+    /* width: 150px; */
+    display: flex;
+    flex-wrap: wrap;
+    right: 0;
+}
+#samples::-webkit-scrollbar{
+    background-color: black;
+    opacity: 0.5;
+    width: 10px;
+}
+#samples::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius:5px ;
+    opacity: 0.5;
+}
+.samples{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid grey;
+    /* background-color: red; */
+    border-radius: 50%;
+}
+.bottom{
+    position: relative;
+    background-color: #fff;
+    height: 50%;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom input{
+    /* margin: 100px; */
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    font-size: 20px;
+}
+.bottom input:nth-child(1){
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.bottom input:nth-child(1)::placeholder{
+    color: red;
+}
+.bottom input:nth-child(3){
+    color: blue;
+    
+    border: 1px solid blue  ;
+    border-radius: 5px;
+}
+.bottom input:nth-child(3)::placeholder{
+    color: blue;
+}
+.bottom input:nth-child(2){
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.bottom input:nth-child(2)::placeholder{
+    color: green;
+}
+#mix{
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 40px;
+    left: 45.5%;
+    top: -50px;
+    width: 120px;
+    background-color: rgb(150, 146, 146);
+    /* border: none; */
+    /* transform: translate(-50%,-50%); */
+}
